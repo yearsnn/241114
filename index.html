@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>렌티큘러 효과 구현</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix"></script>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="camera-container">
+        <video id="video" autoplay></video>
+        <button id="captureButton1">첫 번째 촬영</button>
+    </div>
+    <div id="captureScreen" style="display: none;">
+        <button id="captureButton2">두 번째 촬영</button>
+    </div>
+    <div id="threejs-container" style="display: none;"></div>
+</body>
+</html>

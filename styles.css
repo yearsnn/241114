@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+#camera-container, #captureScreen, #threejs-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border: 2px solid #fff;
+}
+
+button {
+    position: absolute;
+    bottom: 20px; 
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#threejs-container {
+    width: 100vw;
+    height: 100vh;
+    display: none; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
